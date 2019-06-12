@@ -13,10 +13,12 @@ namespace liekong8
 {
     public partial class Form1 : Form
     {
+        private Setting setting;
         public Form1()
         {
            
             InitializeComponent();
+            setting = new Setting();
         }
         List<Button> light = new List<Button>();
         int ser = -1, weizhi = 0;
@@ -54,12 +56,12 @@ namespace liekong8
         
         private void button10_Click(object sender, EventArgs e)
         {
-            hjjsd = Convert.ToInt16(textBox6.Text);
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            hjsd = Convert.ToInt16(textBox3.Text);
+            
         }       
         private void button1_Click(object sender, EventArgs e)
         {
@@ -81,10 +83,25 @@ namespace liekong8
             timecost =  (float)timer1.Interval/1000;
             jiasudu = (float)Convert.ToInt16(showhjjsd.Text);
             fspeed = (float)Convert.ToInt16(csd.Text);
-            runtype.SelectedIndex = 1;
+            setting.runtype.SelectedIndex = 1;
             init();
             grachatinit();
             
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            setting.Show();
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -123,16 +140,22 @@ namespace liekong8
         }
         private void chusuduclik_Click(object sender, EventArgs e)
         {
-            V0 = (float)Convert.ToInt16(chusudu.Text);
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            hjjsd = Convert.ToInt16(setting.textBox6.Text);
+            hjsd = Convert.ToInt16(setting.textBox3.Text);
+            V0 = (float)Convert.ToInt16(setting.chusudu.Text);
+
             chart1.Series.Add((++ser).ToString());
             chart1.Series[ser].ChartType = SeriesChartType.Line;
             chart1.Series[ser].BorderWidth = 3;
             chart1.Series[ser].Name = "实际速度曲线"+ser.ToString()+" "+V0.ToString();
+            
             fspeed = V0;
+
             jiasudu = hjjsd;
             label7.Text = jiasudu.ToString();
             timer1.Start();
@@ -151,12 +174,12 @@ namespace liekong8
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;
             }
-            else if(fspeed<hjsd && runtype.Text == "加速")
+            else if(fspeed<hjsd && setting.runtype.Text == "加速")
             {
                 tmp += fspeed * timecost + (float)0.5 * 80 * timecost * timecost;
                 fspeed += timecost * 80;
             }
-            else if(fspeed> hjsd && runtype.Text != "加速")
+            else if(fspeed> hjsd && setting.runtype.Text != "加速")
             {
                 tmp += fspeed * timecost - (float)0.5 * jiasudu * timecost * timecost;
                 fspeed -= timecost * jiasudu;

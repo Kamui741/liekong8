@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.runtype = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.crh = new System.Windows.Forms.PictureBox();
@@ -48,13 +49,6 @@
             this.L1 = new System.Windows.Forms.Button();
             this.L12 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.lineShape69 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape68 = new Microsoft.VisualBasic.PowerPacks.LineShape();
@@ -140,6 +134,13 @@
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
@@ -164,6 +165,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.lineShape70 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape71 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape72 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape73 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape74 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape75 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.L13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.crh)).BeginInit();
             this.panel1.SuspendLayout();
@@ -193,7 +200,7 @@
             // 
             // crh
             // 
-            this.crh.Image = global::liekong8.Properties.Resources.crh1;
+            this.crh.Image = ((System.Drawing.Image)(resources.GetObject("crh.Image")));
             this.crh.Location = new System.Drawing.Point(1111, 39);
             this.crh.Name = "crh";
             this.crh.Size = new System.Drawing.Size(64, 33);
@@ -384,101 +391,11 @@
             this.panel1.Controls.Add(this.L11);
             this.panel1.Controls.Add(this.crh);
             this.panel1.Controls.Add(this.shapeContainer2);
-            this.panel1.Location = new System.Drawing.Point(3, 55);
+            this.panel1.Location = new System.Drawing.Point(101, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1230, 316);
+            this.panel1.Size = new System.Drawing.Size(1230, 171);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(18, 383);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "暂停";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(554, 382);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 35);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "开始";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(420, 383);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 35);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "重置";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(152, 383);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(128, 35);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "绘制安全曲线";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.drawanquan);
-            // 
-            // chart1
-            // 
-            chartArea2.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea2.AxisX.Interval = 500D;
-            chartArea2.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea2.AxisX.Maximum = 12000D;
-            chartArea2.AxisX.Minimum = 0D;
-            chartArea2.AxisX.Title = "路程";
-            chartArea2.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-            chartArea2.AxisY.Interval = 50D;
-            chartArea2.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
-            chartArea2.AxisY.Maximum = 400D;
-            chartArea2.AxisY.Minimum = 0D;
-            chartArea2.AxisY.Title = "速度";
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(7, 426);
-            this.chart1.Name = "chart1";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "s";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(1492, 374);
-            this.chart1.TabIndex = 23;
-            this.chart1.Text = "chart1";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(286, 383);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 35);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "清空曲线";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(688, 382);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(115, 36);
-            this.button6.TabIndex = 38;
-            this.button6.Text = "设置";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // shapeContainer2
             // 
@@ -486,6 +403,12 @@
             this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer2.Name = "shapeContainer2";
             this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape75,
+            this.lineShape74,
+            this.lineShape73,
+            this.lineShape72,
+            this.lineShape71,
+            this.lineShape70,
             this.lineShape69,
             this.lineShape68,
             this.lineShape67,
@@ -570,7 +493,7 @@
             this.lineShape4,
             this.lineShape3,
             this.lineShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(1230, 316);
+            this.shapeContainer2.Size = new System.Drawing.Size(1230, 171);
             this.shapeContainer2.TabIndex = 0;
             this.shapeContainer2.TabStop = false;
             // 
@@ -1028,9 +951,9 @@
             // 
             this.lineShape1.BorderWidth = 3;
             this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 66;
+            this.lineShape1.X1 = 6;
             this.lineShape1.X2 = 1180;
-            this.lineShape1.Y1 = 73;
+            this.lineShape1.Y1 = 71;
             this.lineShape1.Y2 = 73;
             // 
             // lineShape29
@@ -1285,6 +1208,96 @@
             this.lineShape2.Y1 = 63;
             this.lineShape2.Y2 = 80;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(288, 265);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 35);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "暂停";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(824, 264);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 35);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "开始";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(690, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(128, 35);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "重置";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(422, 265);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(128, 35);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "绘制安全曲线";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.drawanquan);
+            // 
+            // chart1
+            // 
+            chartArea3.AxisX.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea3.AxisX.Interval = 500D;
+            chartArea3.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea3.AxisX.Maximum = 12000D;
+            chartArea3.AxisX.Minimum = 0D;
+            chartArea3.AxisX.Title = "路程";
+            chartArea3.AxisY.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+            chartArea3.AxisY.Interval = 50D;
+            chartArea3.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot;
+            chartArea3.AxisY.Maximum = 400D;
+            chartArea3.AxisY.Minimum = 0D;
+            chartArea3.AxisY.Title = "速度";
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(101, 312);
+            this.chart1.Name = "chart1";
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "s";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(1230, 390);
+            this.chart1.TabIndex = 23;
+            this.chart1.Text = "chart1";
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(556, 265);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(128, 35);
+            this.button5.TabIndex = 24;
+            this.button5.Text = "清空曲线";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(958, 264);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(115, 36);
+            this.button6.TabIndex = 38;
+            this.button6.Text = "设置";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -1395,7 +1408,7 @@
             this.yindaqi.Controls.Add(this.button7);
             this.yindaqi.Controls.Add(this.label14);
             this.yindaqi.Controls.Add(this.textBox3);
-            this.yindaqi.Location = new System.Drawing.Point(1408, 383);
+            this.yindaqi.Location = new System.Drawing.Point(1244, 384);
             this.yindaqi.Name = "yindaqi";
             this.yindaqi.Size = new System.Drawing.Size(10, 10);
             this.yindaqi.TabIndex = 16;
@@ -1407,7 +1420,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(1286, 32);
+            this.label18.Location = new System.Drawing.Point(1195, 422);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(69, 20);
             this.label18.TabIndex = 23;
@@ -1418,7 +1431,7 @@
             // 
             this.csd.AutoSize = true;
             this.csd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.csd.Location = new System.Drawing.Point(1379, 32);
+            this.csd.Location = new System.Drawing.Point(1288, 422);
             this.csd.Name = "csd";
             this.csd.Size = new System.Drawing.Size(39, 20);
             this.csd.TabIndex = 28;
@@ -1429,7 +1442,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label26.Location = new System.Drawing.Point(1286, 69);
+            this.label26.Location = new System.Drawing.Point(1195, 459);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(69, 20);
             this.label26.TabIndex = 33;
@@ -1440,7 +1453,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(1286, 109);
+            this.label15.Location = new System.Drawing.Point(1195, 499);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(89, 20);
             this.label15.TabIndex = 24;
@@ -1451,7 +1464,7 @@
             // 
             this.showhjjsd.AutoSize = true;
             this.showhjjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjjsd.Location = new System.Drawing.Point(1383, 69);
+            this.showhjjsd.Location = new System.Drawing.Point(1292, 459);
             this.showhjjsd.Name = "showhjjsd";
             this.showhjjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjjsd.TabIndex = 36;
@@ -1462,7 +1475,7 @@
             // 
             this.showhjsd.AutoSize = true;
             this.showhjsd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.showhjsd.Location = new System.Drawing.Point(1383, 109);
+            this.showhjsd.Location = new System.Drawing.Point(1292, 499);
             this.showhjsd.Name = "showhjsd";
             this.showhjsd.Size = new System.Drawing.Size(19, 20);
             this.showhjsd.TabIndex = 27;
@@ -1473,7 +1486,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(25, 32);
+            this.label3.Location = new System.Drawing.Point(381, 475);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 20);
             this.label3.TabIndex = 5;
@@ -1483,7 +1496,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(111, 32);
+            this.label4.Location = new System.Drawing.Point(467, 475);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 20);
             this.label4.TabIndex = 6;
@@ -1493,7 +1506,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(200, 32);
+            this.label5.Location = new System.Drawing.Point(556, 475);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 20);
             this.label5.TabIndex = 8;
@@ -1503,7 +1516,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(387, 32);
+            this.label6.Location = new System.Drawing.Point(743, 475);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 9;
@@ -1513,7 +1526,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(312, 32);
+            this.label7.Location = new System.Drawing.Point(668, 475);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 20);
             this.label7.TabIndex = 10;
@@ -1523,15 +1536,69 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(482, 32);
+            this.label8.Location = new System.Drawing.Point(838, 475);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 20);
             this.label8.TabIndex = 11;
             this.label8.Text = "label8";
             // 
+            // lineShape70
+            // 
+            this.lineShape70.BorderWidth = 2;
+            this.lineShape70.Name = "lineShape70";
+            this.lineShape70.X1 = 101;
+            this.lineShape70.X2 = 111;
+            this.lineShape70.Y1 = 76;
+            this.lineShape70.Y2 = 93;
+            // 
+            // lineShape71
+            // 
+            this.lineShape71.BorderWidth = 2;
+            this.lineShape71.Name = "lineShape71";
+            this.lineShape71.X1 = 90;
+            this.lineShape71.X2 = 110;
+            this.lineShape71.Y1 = 94;
+            this.lineShape71.Y2 = 94;
+            // 
+            // lineShape72
+            // 
+            this.lineShape72.BorderWidth = 2;
+            this.lineShape72.Name = "lineShape72";
+            this.lineShape72.X1 = 100;
+            this.lineShape72.X2 = 90;
+            this.lineShape72.Y1 = 76;
+            this.lineShape72.Y2 = 94;
+            // 
+            // lineShape73
+            // 
+            this.lineShape73.BorderWidth = 2;
+            this.lineShape73.Name = "lineShape73";
+            this.lineShape73.X1 = 1020;
+            this.lineShape73.X2 = 1030;
+            this.lineShape73.Y1 = 79;
+            this.lineShape73.Y2 = 96;
+            // 
+            // lineShape74
+            // 
+            this.lineShape74.BorderWidth = 2;
+            this.lineShape74.Name = "lineShape74";
+            this.lineShape74.X1 = 1009;
+            this.lineShape74.X2 = 1029;
+            this.lineShape74.Y1 = 97;
+            this.lineShape74.Y2 = 97;
+            // 
+            // lineShape75
+            // 
+            this.lineShape75.BorderWidth = 2;
+            this.lineShape75.Name = "lineShape75";
+            this.lineShape75.X1 = 1019;
+            this.lineShape75.X2 = 1009;
+            this.lineShape75.Y1 = 79;
+            this.lineShape75.Y2 = 97;
+            // 
             // L13
             // 
-            this.L13.Location = new System.Drawing.Point(699, 13);
+            this.L13.Location = new System.Drawing.Point(1055, 456);
             this.L13.Name = "L13";
             this.L13.Size = new System.Drawing.Size(75, 23);
             this.L13.TabIndex = 37;
@@ -1545,32 +1612,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(1440, 885);
-            this.Controls.Add(this.yindaqi);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.L13);
-            this.Controls.Add(this.showhjsd);
-            this.Controls.Add(this.showhjjsd);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.chart1);
-            this.Controls.Add(this.csd);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label18);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.runtype);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.csd);
+            this.Controls.Add(this.showhjjsd);
+            this.Controls.Add(this.showhjsd);
+            this.Controls.Add(this.yindaqi);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.L13);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ATP";
@@ -1722,6 +1789,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape75;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape74;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape73;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape72;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape71;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape70;
         private System.Windows.Forms.Button L13;
     }
 }

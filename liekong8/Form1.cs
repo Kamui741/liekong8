@@ -16,7 +16,6 @@ namespace liekong8
         private Setting setting;
         public Form1()
         {
-           
             InitializeComponent();
             setting = new Setting();
         }

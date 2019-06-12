@@ -18,25 +18,6 @@ namespace liekong8
             InitializeComponent();
         }
 
-        private void Setting_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void TextBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Chusudu_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         protected override void OnClosing(CancelEventArgs e)
         {
